@@ -1,8 +1,8 @@
 ---
-_metadata":
-  name: "HQ data"
+_metadata:
+  name: HQ data
   weight: 1000
-  description: "MDD data at the HQ site level"
+  description: MDD data at the HQ site level
   is_active: true
 
 mdd_data:

@@ -1,8 +1,8 @@
 ---
-_metadata":
-  name: "Org data"
+_metadata:
+  name: Org data
   weight: 1000
-  description: "MDD data at the org region level"
+  description: MDD data at the org region level
   is_active: true
 
 mdd_data:

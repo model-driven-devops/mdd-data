@@ -1,8 +1,8 @@
 ---
-_metadata":
-  name: "Region 2 data"
+_metadata:
+  name: Region 2 data
   weight: 1000
-  description: "MDD data at the region2 level"
+  description: MDD data at the region2 level
   is_active: true
 
 mdd_data:
