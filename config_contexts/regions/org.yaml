@@ -1,16 +1,22 @@
 ---
-_metadata:
-  name: Org data
-  weight: 1000
-  description: MDD data at the org region level
-  is_active: true
-
-mdd_data:
-  mdd:openconfig:
-    openconfig-system:system:
-      openconfig-system:config:
-        openconfig-system:login-banner: "Unauthorized access is prohibited!"
-        openconfig-system:motd-banner: "Welcome to {{ inventory_hostname }}"
+- _metadata:
+    name: org-system-banner
+    weight: 1000
+    description: MDD data at the org region level
+    is_active: true
+  mdd_data:
+      mdd:openconfig:
+        openconfig-system:system:
+          openconfig-system:config:
+            openconfig-system:login-banner: "Unauthorized access is prohibited!"
+            openconfig-system:motd-banner: "Welcome to {{ inventory_hostname }}"
+- _metadata:
+    name: org-ntp
+    weight: 1000
+    description: MDD data at the org region level
+    is_active: true
+  mdd_data:
+    mdd:openconfig:
       openconfig-system:clock:
         openconfig-system:config:
           openconfig-system:timezone-name: 'PST -8 0'
