@@ -1,0 +1,13 @@
+---
+_metadata":
+  name: "Region 2 data"
+  weight: 1000
+  description: "MDD data at the region2 level"
+  is_active: true
+
+mdd_data:
+  mdd:openconfig:
+    openconfig-system:system:
+      openconfig-system:clock:
+        openconfig-system:config:
+          openconfig-system:timezone-name: 'EST -5 0'
