@@ -1,30 +1,31 @@
 ---
-- _metadata:
-    name: org-data
-    weight: 1000
-    description: MDD data at the org region level
-    is_active: true
-  mdd_data:
-    mdd:openconfig:
-      openconfig-system:system:
-        openconfig-system:config:
-          openconfig-system:login-banner: "Unauthorized access is prohibited!"
-          openconfig-system:motd-banner: "Welcome to {{ inventory_hostname }}"
-      openconfig-system:clock:
-        openconfig-system:config:
-          openconfig-system:timezone-name: 'PST -8 0'
-      openconfig-system:ntp:
-        openconfig-system:config:
-          openconfig-system:enabled: true
-        openconfig-system:servers:
-          openconfig-system:server:
-            - openconfig-system:address: '216.239.35.0'
-              openconfig-system:config:
-                openconfig-system:address: '216.239.35.0'
-                openconfig-system:association-type: SERVER
-                openconfig-system:iburst: true
-            - openconfig-system:address: '216.239.35.4'
-              openconfig-system:config:
-                openconfig-system:address: '216.239.35.4'
-                openconfig-system:association-type: SERVER
-                openconfig-system:iburst: true
+_metadata:
+  name: org-data
+  weight: 1000
+  description: MDD data at the org region level
+  is_active: true
+
+mdd_data:
+  mdd:openconfig:
+    openconfig-system:system:
+      openconfig-system:config:
+        openconfig-system:login-banner: "Unauthorized access is prohibited!"
+        openconfig-system:motd-banner: "Welcome to {{ inventory_hostname }}"
+    openconfig-system:clock:
+      openconfig-system:config:
+        openconfig-system:timezone-name: 'PST -8 0'
+    openconfig-system:ntp:
+      openconfig-system:config:
+        openconfig-system:enabled: true
+      openconfig-system:servers:
+        openconfig-system:server:
+          - openconfig-system:address: '216.239.35.0'
+            openconfig-system:config:
+              openconfig-system:address: '216.239.35.0'
+              openconfig-system:association-type: SERVER
+              openconfig-system:iburst: true
+          - openconfig-system:address: '216.239.35.4'
+            openconfig-system:config:
+              openconfig-system:address: '216.239.35.4'
+              openconfig-system:association-type: SERVER
+              openconfig-system:iburst: true
